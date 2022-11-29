@@ -1,0 +1,170 @@
+$main-color: #000000;
+$nav-link: #707070;
+$nav-active: #326DF9;
+$price: #131313;
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $main-color;
+
+    display: table;
+
+    font-family: 'Poppins', sans-serif;
+    
+    font-weight: 500;
+    .nav-link:active {
+        color: #fff;
+    }
+    main {
+        display: table-row;
+        height: 100%;
+        .section-one_title {
+            font-size: 10.723860589812332vh;
+        }
+        .section-one_subtitle {
+            font-size: 13.404825737265416vh;
+            background: linear-gradient(90deg, #FE6783 1.9%, #FFBF84 97.1%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .navbar {
+        .container {
+            .navbar-collapse {
+                .nav-link {
+                    color: $nav-link;
+                }
+                .active-link {
+                    color: $nav-active;
+                }
+            }
+            .navbar-brand-title {
+                font-weight: 800;
+            }
+        }
+    }
+    footer {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        background-color: $main-color;
+        flex-shrink: 0;
+        .navbar {
+            .container {
+                .navbar-brand-title {
+                    font-weight: 800;
+                }
+                .navbar-collapse {
+                    form {
+                        .navbar-nav {
+                            .nav-item {
+                                .nav-link {
+                                    color: $nav-link;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        .step-one_img {
+            background-image: url('../img/Image-4.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            filter: drop-shadow(0px 30px 50px rgba(0, 0, 0, 0.4));
+        }
+        .step-three_img {
+            background-image: url('../img/Image.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            filter: drop-shadow(0px 30px 50px rgba(100, 100, 100, 0.498039));
+        }
+        .experts-img {
+            width: 100vw;
+            height: 300px;
+            background-image: url('../img/experts.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+        .form {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            padding: 0px 20px 0px 20px;
+            input {
+                background-color: transparent; 
+                border: none;
+                border-radius: 13px;
+                padding: 10px;
+                color: #fff;
+                width: 100%;
+                &:focus {
+                    outline: none;
+                }
+            }
+            .icon {
+                position: absolute;
+                right: 12px;
+                color: #fff;
+            }
+        }
+        .border {
+            cursor: pointer;
+        }
+        .price {
+            background-color: $price;
+            border: 1px solid #707070;
+            border-radius: 13px;
+            display: table;
+            min-height: 100vh;
+            .title {
+                color: #B4B1B1;
+            }
+            ol{
+                list-style: none;
+                li {
+                    padding-left: 20px;
+                    position: relative;
+                    margin: 10px;
+                    color: #fff;
+                    &:before {
+                        content: '✔';
+                        position: absolute; top: 0; left: 0;
+                        color: white;
+                    }
+                }
+            }
+                .price-block {
+                    display: table-row;
+                    height: 100%;
+                }
+                button {
+                    flex-shrink: 0;
+                }
+        }
+    }
+    .container-fluid {
+        .creators {
+            min-height: 100vh;
+            width: 100%;
+            background-image: url('../img/Image-5.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            .creators-title {
+                position: absolute;
+                top: 50%;
+            }
+        }
+    }
+}

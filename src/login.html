@@ -1,0 +1,40 @@
+@@include('components/header.html')
+
+<main>
+    <div class="container d-flex flex-column align-items-center pt-5 pb-5">
+        <p class="fs-1 fw-bold text-center text-white">Log in</p>
+        <p class="fs-6 text-center text-white">Login into existing account.</p>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="form">
+                    <i class="fa-regular fa-user icon"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form">
+                    <i class="fa-regular fa-eye icon"></i>
+                    <input type="text" placeholder="Password">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary p-2 w-25 mt-5 px-5 d-flex justify-content-center align-items-center text-white">Log in</button>
+        <p class="fs-1 fw-bold text-white text-center pt-5">Or</p>
+        <p class="fs-6 text-white text-center">Log in with...</p>
+        <div class="row w-100 pt-5 pb-5 d-flex justify-content-center">
+            <div class="col-md-3 mb-2 border p-3 d-flex align-items-center justify-content-center rounded">
+                <img src="./img/Facebook.png" alt="">
+                <span class="text-white ps-3">Log in with Facebook</span>
+            </div>
+            <div class="col-md-3 mb-2 border mx-sm-0 mx-md-3 p-3 d-flex align-items-center justify-content-center rounded">
+                <img src="./img/G_logo.png" alt="">
+                <span class="text-white ps-3">Log in with Google</span>
+            </div>
+            <div class="col-md-3 mb-2 border p-3 d-flex align-items-center justify-content-center rounded">
+                <img src="./img/Apple.png" alt="">
+                <span class="text-white ps-3">Log in with Apple</span>
+            </div>
+        </div>
+        <p class="fs-6 text-white text-center pt-5 pb-5 d-flex">Don’t have an account? <a href="./signup.html" class="nav-link text-white ms-2 border-bottom">Create One.</a></p>
+    </div>
+</main>
